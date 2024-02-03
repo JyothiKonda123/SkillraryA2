@@ -7,7 +7,7 @@
 
 	import genericUtilities.BaseClass;
 import genericUtilities.IConstantpath.IConstantPath;
-
+    //this test verifies if user is able to create category
 
 	public class AddCategoryTest extends BaseClass {
 		@Test

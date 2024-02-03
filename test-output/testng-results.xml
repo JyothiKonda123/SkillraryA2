@@ -2,28 +2,57 @@
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T12:21:00 IST" name="Suite" finished-at="2024-02-02T12:22:30 IST" duration-ms="90418">
+  <suite started-at="2024-02-03T13:19:09 IST" name="Suite" finished-at="2024-02-03T13:20:37 IST" duration-ms="88605">
     <groups>
     </groups>
-    <test started-at="2024-02-02T12:21:00 IST" name="Test" finished-at="2024-02-02T12:22:30 IST" duration-ms="90418">
+    <test started-at="2024-02-03T13:19:09 IST" name="Test" finished-at="2024-02-03T13:20:37 IST" duration-ms="88605">
       <class name="testScripts.AddUserTest">
-        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-02T12:22:01 IST" name="classSetup" finished-at="2024-02-02T12:22:02 IST" duration-ms="1128" status="PASS">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-03T13:20:28 IST" name="classSetup" finished-at="2024-02-03T13:20:29 IST" duration-ms="1093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-02T12:22:02 IST" name="methodSetup" finished-at="2024-02-02T12:22:30 IST" duration-ms="28505" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-03T13:20:29 IST" name="methodSetup" finished-at="2024-02-03T13:20:37 IST" duration-ms="8801" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[expected [Home] but found [Login]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9ERABQ6', ip: '192.168.10.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Bharat\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d173e1f5297f74f72a18f7d0fd16ae40
+*** Element info: {Using=xpath, value=//h3[text()='Login']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Home] but found [Login]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9ERABQ6', ip: '192.168.10.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Bharat\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d173e1f5297f74f72a18f7d0fd16ae40
+*** Element info: {Using=xpath, value=//h3[text()='Login']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at pomPages.Loginpage.getPageHeader(Loginpage.java:29)
 at genericUtilities.BaseClass.methodSetup(BaseClass.java:71)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -59,23 +88,52 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method signature="addUsersTest()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-02T12:22:30 IST" name="addUsersTest" finished-at="2024-02-02T12:22:30 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="addUsersTest()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-03T13:20:37 IST" name="addUsersTest" finished-at="2024-02-03T13:20:37 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[expected [Home] but found [Login]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9ERABQ6', ip: '192.168.10.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Bharat\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d173e1f5297f74f72a18f7d0fd16ae40
+*** Element info: {Using=xpath, value=//h3[text()='Login']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Home] but found [Login]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9ERABQ6', ip: '192.168.10.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Bharat\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d173e1f5297f74f72a18f7d0fd16ae40
+*** Element info: {Using=xpath, value=//h3[text()='Login']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at pomPages.Loginpage.getPageHeader(Loginpage.java:29)
 at genericUtilities.BaseClass.methodSetup(BaseClass.java:71)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -111,25 +169,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUsersTest -->
-        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-02T12:22:30 IST" name="methodTearDown" finished-at="2024-02-02T12:22:30 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-03T13:20:37 IST" name="methodTearDown" finished-at="2024-02-03T13:20:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodTearDown -->
-        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-02T12:22:30 IST" name="classTearDown" finished-at="2024-02-02T12:22:30 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddUserTest@7526515b]" started-at="2024-02-03T13:20:37 IST" name="classTearDown" finished-at="2024-02-03T13:20:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- testScripts.AddUserTest -->
       <class name="testScripts.AddCourseTest">
-        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-02T12:21:31 IST" name="classSetup" finished-at="2024-02-02T12:21:32 IST" duration-ms="1380" status="PASS">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-03T13:19:22 IST" name="classSetup" finished-at="2024-02-03T13:19:24 IST" duration-ms="2003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-02T12:21:32 IST" name="methodSetup" finished-at="2024-02-02T12:22:01 IST" duration-ms="28197" status="FAIL">
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-03T13:19:24 IST" name="methodSetup" finished-at="2024-02-03T13:20:28 IST" duration-ms="63465" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Home] but found [Login]]]>
@@ -181,7 +239,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method signature="addCourseTest()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-02T12:22:01 IST" name="addCourseTest" finished-at="2024-02-02T12:22:01 IST" duration-ms="0" status="SKIP">
+        <test-method signature="addCourseTest()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-03T13:20:28 IST" name="addCourseTest" finished-at="2024-02-03T13:20:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Home] but found [Login]]]>
@@ -233,21 +291,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCourseTest -->
-        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-02T12:22:01 IST" name="methodTearDown" finished-at="2024-02-02T12:22:01 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-03T13:20:28 IST" name="methodTearDown" finished-at="2024-02-03T13:20:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodTearDown -->
-        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-02T12:22:01 IST" name="classTearDown" finished-at="2024-02-02T12:22:01 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddCourseTest@644baf4a]" started-at="2024-02-03T13:20:28 IST" name="classTearDown" finished-at="2024-02-03T13:20:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- testScripts.AddCourseTest -->
       <class name="testScripts.AddCategoryTest">
-        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-02T12:21:00 IST" name="classSetup" finished-at="2024-02-02T12:21:05 IST" duration-ms="4521" status="PASS">
+        <test-method is-config="true" signature="classSetup()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-03T13:19:09 IST" name="classSetup" finished-at="2024-02-03T13:19:13 IST" duration-ms="4494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-02T12:21:05 IST" name="methodSetup" finished-at="2024-02-02T12:21:31 IST" duration-ms="26504" status="FAIL">
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-03T13:19:13 IST" name="methodSetup" finished-at="2024-02-03T13:19:22 IST" duration-ms="8509" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Home] but found [Login]]]>
@@ -299,7 +357,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method signature="addCategoryTest()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-02T12:21:31 IST" name="addCategoryTest" finished-at="2024-02-02T12:21:31 IST" duration-ms="0" status="SKIP">
+        <test-method signature="addCategoryTest()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-03T13:19:22 IST" name="addCategoryTest" finished-at="2024-02-03T13:19:22 IST" duration-ms="1" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Home] but found [Login]]]>
@@ -351,11 +409,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCategoryTest -->
-        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-02T12:21:31 IST" name="methodTearDown" finished-at="2024-02-02T12:21:31 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-03T13:19:22 IST" name="methodTearDown" finished-at="2024-02-03T13:19:22 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodTearDown -->
-        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-02T12:21:31 IST" name="classTearDown" finished-at="2024-02-02T12:21:31 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="classTearDown()[pri:0, instance:testScripts.AddCategoryTest@2e385cce]" started-at="2024-02-03T13:19:22 IST" name="classTearDown" finished-at="2024-02-03T13:19:22 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
