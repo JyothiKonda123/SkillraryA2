@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genericUtilities.BaseClass;
-
+//This method is used to add the user
 public class AddUserTest extends BaseClass {
 	@Test
 	public void addUsersTest() throws InterruptedException {
