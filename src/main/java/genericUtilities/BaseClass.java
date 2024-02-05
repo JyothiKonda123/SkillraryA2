@@ -16,7 +16,7 @@ import pomPages.CoursrListPage;
 import pomPages.Homepage;
 import pomPages.Loginpage;
 import pomPages.UserPage;
-
+//this method is added or not
 public class BaseClass {
 	protected WebDriver driver;
 	protected propertiesUtility property;
